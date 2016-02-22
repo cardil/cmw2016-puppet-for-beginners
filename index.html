@@ -92,13 +92,12 @@
           <h2>Jak będzie wyglądał warsztat?</h2>
 
           <ul>
-            <li>~9 tematów: <ul>
+            <li>~5 tematów: <ul>
               <li>Wstęp teoretyczny</li>
               <li>Samodzielna praca</li>
               <li>Przerwa</li>
             </ul></li>
             <li>Mikro projekt</li>
-            <li>Obiad koło 13</li>
           </ul>
 
         </section>
@@ -106,16 +105,12 @@
         <section>
           <h2>Co przed nami?</h2>
           <ol>
-            <li class="fragment">Czym jest DevOps i gdzie w tym Puppet?</li>
             <li class="fragment">Sposoby pracy z Puppet</li>
             <li class="fragment">Instalacja Puppet na systemie operacyjnym</li>
-            <li class="fragment">Architektura master - agent w Puppet</li>
             <li class="fragment">Podstawowe typy takie jak file, service, user czy package</li>
             <li class="fragment">Składnia deklaratywnych manifestów</li>
             <li class="fragment">Zasoby i zarządzanie kolejnością</li>
-            <li class="fragment">Klasy i definicje</li>
             <li class="fragment">Wstęp do testowania i tryb bez operacyjny</li>
-            <li class="fragment">Kompilacja, katalogi oraz raportowanie</li>
           </ol>
         </section>
       </section>
@@ -126,199 +121,6 @@
           <li>Jakie cele mam na tym warsztacie?</li>
           <li>Czy potrafię wskazać na czym najbardziej mi zależy?</li>
           <li>Czy mam już plan jak wykorzystać zdobytą tu wiedzę?</li>
-        </ul>
-      </section>
-
-      <section>
-
-        <section>
-          <h1>Przyjrzyjmy się problemom w IT</h1>
-          <h2 class="blue">pomiędzy rozwojem aplikacji a utrzymaniem</h2>
-        </section>
-
-        <section>
-          <h1>Zmiana</h1>
-          <h6>Zmiana to jedyna <span class="blue">pewna</span> rzecz w każdej firmie</h6>
-          <h6 class="fragment">Powinna być <span class="blue">wykorzystana</span> i sprawnie <span class="blue">wprowadzona</span></h6>
-        </section>
-        <section>
-          <h1>Zmiana</h1>
-          <h6>Nie powinna prowadzić do strachu w żadnym z działów w firmie</h6>
-          <h6 class="fragment">Nie powinna oznaczać zwiększonego stresu</h6>
-          <h6 class="fragment">Nie powinna oznaczać konieczności "gaszenia pożarów"</h6>
-        </section>
-        <section>
-          <h2>Dalsze wyzwania</h2>
-
-          <ul>
-              <li class="fragment">Niska komunikacja = konflikty i niska efektywność</li>
-              <li class="fragment">Programiści nie wdrażają spójnego software'u</li>
-              <li class="fragment">Administratorzy mają tendencję do opierania się zmianom</li>
-              <li class="fragment">Proces wytwarzania jest najczęściej zwinny</li>
-              <li class="fragment">Proces utrzymania jest najczęściej statyczny</li>
-              <li class="fragment">Coraz potężniejsze, rozproszone rozwiązania</li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>Devs vs Ops</h2>
-
-        <table>
-            <tr>
-              <th>&nbsp;</th>
-              <th>Developerzy</th>
-              <th>Administratorzy</th>
-            </tr>
-            <tr>
-              <td>Zainteresowanie</td>
-              <td>Szybkie zmiany</td>
-              <td>Stabilność środowiska</td>
-            </tr>
-            <tr>
-              <td>Skala</td>
-              <td><img
-                  width="250"
-                  style="background-color: #fff;"
-                  src="img/developer.png"
-                  alt="Developer view" /></td>
-              <td><img
-                  width="300"
-                  src="img/large-network-diagram.jpg"
-                  alt="Admin view" /></td>
-            </tr>
-            <tr>
-              <td>Cytaty</td>
-              <td><q>&quot; It works on my machine&quot;</q></td>
-              <td><q>&quot; It's not server, it's your code&quot;</q></td>
-            </tr>
-        </table>
-      </section>
-
-      <section data-background-color="#376422">
-        <section>
-          <h2>Rozwiązanie?</h2>
-          <h1>DevOps</h1>
-        </section>
-        <section>
-          <h1>Definicja</h1>
-          <blockquote>&quot;DevOps to praktyka codziennej współpracy i współtworzenia zespołów administracyjnych z zespołami programistów&quot;</blockquote>
-        </section>
-        <section>
-          <h2>Założenia DevOps</h2>
-          <ul>
-            <li>DevOps stosujemy w trakcie trwania całego cyklu życia danej usługi lub dłużej</li>
-            <li class="fragment">Od momentu jej projektowania, przez wykonanie, wdrożenie i utrzymanie</li>
-            <li class="fragment">Poprzez stosowanie wspólnych narzędzi i praktyk</li>
-            <li class="fragment">Automatyzację pracy i mikro wdrożenia</li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>DevOps w punktach</h2>
-
-        <ol>
-            <li>Infrastucture as a Code</li>
-            <li class="fragment">Continuous build</li>
-            <li class="fragment">Continuous testing</li>
-            <li class="fragment">Continuous inspection</li>
-            <li class="fragment">Continuous integration</li>
-            <li class="fragment">Continuous delivery</li>
-            <li class="fragment">Continuous configuration enforcement</li>
-            <li class="fragment">Continuous deployment</li>
-            <li class="fragment">Continuous monitoring</li>
-            <li class="fragment">Continuous recovery</li>
-            <li class="fragment">Continuous scaling</li>
-        </ol>
-
-      </section>
-
-      <section data-background-color="#A61C00">
-        <h1>Zadanie 1</h1>
-
-        <p>Dla każdego z podpunktu wymienić kilka narzędzi bądź rozwiązań</p>
-        <p>Proszę użyć internetu i własnych doświadczeń :-)</p>
-      </section>
-
-      <section>
-        <section>
-          <h1 class="blue">Kilka uwag!</h1>
-          <h2>Czym DevOps nie jest?!</h2>
-        </section>
-
-        <section>
-          <h1>To nie jest No-Ops</h1>
-          <ul>
-            <li><cite>&quot;oni zabiorą nam nasze posady&quot;</cite></li>
-            <li class="fragment">współdzielenie odpowiedzialności a nie pozbycia się jej</li>
-            <li class="fragment">współpraca a nie odebranie jej</li>
-            <li class="fragment">uwolnienie ukrytych mocy</li>
-          </ul>
-        </section>
-
-        <section>
-          <h1>Nie chodzi (tylko) o narzędzia</h1>
-          <ul>
-            <li>przekonanie, że w DevOps chodzi głownie o zastosowanie nowych narzędzi w pracy,
-takich jak Puppet czy Chef</li>
-            <li class="fragment">praktyka wspólnej pracy</li>
-            <li class="fragment">wytworzenie kultury i nawyków spójnych z Agile</li>
-          </ul>
-        </section>
-
-        <section>
-          <h1>Nie chodzi (tylko) o kulturę</h1>
-          <ul>
-            <li class="fragment">potrzebne są narzędzia spełniające wymagania obu stron</li>
-            <li class="fragment">narzędzia te muszą wspierać nawyki wspólnej pracy</li>
-            <li class="fragment">obie strony muszą czerpać korzyści</li>
-          </ul>
-        </section>
-        <section>
-          <h1>Nie chodzi (tylko) o połączenie Dev i Ops</h1>
-          <ul>
-            <li class="fragment">obejmuje również: administratorach sieci</li>
-            <li class="fragment">specjalistów bezpieczeństwa</li>
-            <li class="fragment">architektów systemów</li>
-            <li class="fragment">analityków</li>
-          </ul>
-        </section>
-        <section>
-          <h1>Nie chodzi (tylko) o tytuł posady</h1>
-          <ul>
-            <li class="fragment">bez faktycznej zmiany sposobu pracy nie będzie dużych sukcesów</li>
-            <li class="fragment">zmiana musi być po obu stronach</li>
-          </ul>
-        </section>
-        <section>
-          <h1>Nie chodzi o wszystko, wszędzie</h1>
-          <ul>
-            <li class="fragment">po złym wprowadzeniu, upraszcza się DevOps do rozwodnionego Agile</li>
-            <li class="fragment">lub "miłości" do wszystkich</li>
-          </ul>
-        </section>
-      </section>
-
-      <section data-background-color="#17CCDD">
-        <h2>Proces DevOps</h2>
-        <img src="img/DevOps-infinity-loop2.png" />
-        <p>Krótkie szybkie iteracje</p>
-      </section>
-
-      <section>
-        <h2>Zmiana w całej firmie</h2>
-        <img src="img/pres/devops-change.svg" />
-      </section>
-
-      <section data-background-color="#A61C00">
-        <h1>Zadanie 2</h1>
-        <h2>Dyskusja</h2>
-        <ul>
-          <li>Co myślisz o DevOps?</li>
-          <li>Czy potrafisz wskazać podobne problemy w swojej organizacji?</li>
-          <li>Czy DevOps różni się znacznie od innych podejść?</li>
-          <li>Na co należy uważać przy DevOps?</li>
         </ul>
       </section>
 
@@ -434,20 +236,11 @@ $ _</code></pre>
         <section>
           <h2>Przykładowy plik Vagrantfile</h2>
           <pre><code class="ruby" style="font-size: 18px;"># -*- mode: ruby -*-
-# vi: set ft=ruby :
-
-# Vagrantfile API/syntax version. Don't touch unless you know what
-VAGRANTFILE_API_VERSION = "2"
-
-Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+Vagrant.configure(2) do |config|
   # Every Vagrant virtual environment requires a box to build off o
   config.vm.box = "puppetlabs/ubuntu-14.04-64-nocm"
 
-  # Enable provisioning with Puppet stand alone.  Puppet manifests
-  # are contained in a directory path relative to this Vagrantfile.
-  # You will need to create the manifests directory and a manifest
-  # the file default.pp in the manifests_path directory.
-  #
+  # [...]
   # config.vm.provision "puppet" do |puppet|
   #   puppet.manifests_path = "manifests"
   #   puppet.manifest_file  = "site.pp"
@@ -549,9 +342,12 @@ $ _</code></pre>
           <h1 class="blue">Wtyczki</h1>
           <h2>do Vagranta</h2>
           <p><a href="https://github.com/mitchellh/vagrant/wiki/Available-Vagrant-Plugins">github.com/mitchellh/vagrant/wiki/Available-Vagrant-Plugins</a></p>
+          <p>
+            <code>vagrant plugin install plugin-name</code>
+          </p>
           <ul>
-            <li>landrush - Lokalnego micro DNS, który automatycznie przyznaje maszynom IP. Działa zarówno w maszynach wirtualnych jak i na hoście</li>
-            <li>sahara - Możliwość wykonywania migawek stanu, przywracania stanu i potwierdzania zmian</li>
+            <li><strong>landrush</strong> - lokalnego micro DNS. Działa zarówno w maszynach wirtualnych jak i na hoście</li>
+            <li><strong>sahara</strong> - Możliwość wykonywania migawek stanu, przywracania stanu i potwierdzania zmian</li>
           </ul>
         </section>
 
@@ -675,12 +471,12 @@ service { 'postgresql':
         <section data-background-color="#A61C00">
           <h1>Zadanie 4</h1>
           <ol>
-            <li>Używając Vagranta utworzyć snapshot przy użyciu sahara i zainstalować puppet z rubygems</li>
-            <li>Uruchomić <code>puppet apply manifest.pp</code>, dwukrotnie, sprawdzając efekt<pre><code class="puppet">package { 'nginx':
+            <li>Używając Vagrant utworzyć VM i zainstalować puppet z repozytoriów Puppetlabs: <a href="https://docs.puppetlabs.com/guides/puppetlabs_package_repositories.html">goo.gl/Xbqnl8</a></li>
+            <li>Zapisać kod w pliku <code>manifest.pp</code>: <pre><code class="puppet">package { 'nginx':
   ensure => 'installed',
 }</code></pre></li>
-            <li>Przywrócić snapshot przy użyciu sahara i zainstalować puppet z repozytoriów puppetlabs</li>
-            <li>Redo #2 (użyj też trybu <code>--noop</code> oraz <code>--debug</code>)</li>
+            <li>Uruchom w trybie No-OP <code>puppet apply manifest.pp --noop</code></li>
+            <li>Wywołaj przy użyciu <code>puppet apply manifest.pp</code> (użyj też trybu <code>--debug</code>)</li>
           </ol>
         </section>
 
@@ -745,7 +541,7 @@ $ _
             <li>Uruchom polecenie: <code>facter ipaddress</code></li>
             <li>Uruchom polecenie: <code>facter fqdn</code></li>
             <li>Uruchom polecenie: <code>facter operatingsystem</code></li>
-            <li>Uruchom polecenie: <code>facter</code></li>
+            <li>Uruchom polecenie: <code>facter -p</code> i <code>facter</code> (porównać)</li>
             <li>Co zwracają te polecenia? Jak można to wykorzystać?</li>
           </ul>
         </section>
@@ -764,11 +560,6 @@ augtool> set /files/etc/postgresql/9.1/main/postgresql.conf/max_connections 130
 augtool> get /files/etc/postgresql/9.1/main/postgresql.conf/max_connections
 /files/etc/postgresql/9.1/main/postgresql.conf/max_connections = 130
 augtool> save</code></pre>
-        </section>
-
-        <section>
-          <h1 class="blue">Demo</h1>
-          <h2>Augeas</h2>
         </section>
 
         <section>
@@ -793,11 +584,6 @@ augtool> save</code></pre>
                         | classes: users::common             |
                          \----------------------------------/
           </code></pre>
-        </section>
-
-        <section>
-          <h1 class="blue">Demo</h1>
-          <h2>Hiera</h2>
         </section>
 
         <section>
@@ -1054,267 +840,18 @@ file { '/etc/passwd':
         </section>
       </section>
 
-      <section>
-        <section>
-          <h1 class="blue">Sposoby uruchamiania</h1>
-          <h4>resource</h4>
-          <h4 class="fragment">apply</h4>
-          <h4 class="fragment">agent</h4>
-        </section>
-
-        <section>
-          <h1>Tryb agent</h1>
-          <p class="fragment">Puppet łączy się do serwera i pobiera z niego konfigurację</p>
-          <p class="fragment">Dostęp tylko po SSL z zaufanym certyfikatem</p>
-          <p class="fragment">Kompilacja na serwerze, wykonanie na agencie</p>
-        </section>
-        <section>
-          <h1>Tryb agent</h1>
-          <h2 class="blue">demo</h2>
-        </section>
-
-        <section data-background-color="#A61C00">
-          <h1>Zadanie 10</h1>
-          <ul>
-            <li>Używając Vagranta uruchomić 2 maszyny master i agent</li>
-            <li>Zainstalować na obu puppet</li>
-            <li>Połączyć agenta do mastera</li>
-            <li>Ma masterze dodać kod i przydzielić go dla agenta</li>
-            <li>Uruchomić agenta</li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Wstęp do testowania</h1>
-        </section>
-        <section>
-          <h2>Sposoby testowania</h2>
-          <p>Puppet posiada szereg możliwości testowania</p>
-          <ul>
-            <li><code>puppet parser validate</code> i puppet-lint</li>
-            <li>smoke testy i tryb bezoperacyjny</li>
-            <li>rspec-puppet</li>
-            <li>beaker</li>
-          </ul>
-          <p>
-            Nie będziemu tu mówić o 2 ostatnich
-          </p>
-        </section>
-        <section>
-          <h2>Walidacja poprawności manifestów</h2>
-          <ul>
-            <li>IDE - polecam w szczególności na początku Geppetto, ale też Atom czy Intellij</li>
-            <li>puppet-lint</li>
-            <li>puppet parser validate</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Tryb bezoperacyjny</h2>
-          <p>
-            Unikalna funkcjonalność puppet
-          </p>
-          <p>
-            Pozwala uruchamianie manifestów bez wprowadzania zmian
-          </p>
-          <p>
-            Flaga: <code>--noop</code>
-          </p>
-        </section>
-        <section>
-          <h2>Smoke testy Puppet</h2>
-          <p>W Puppet smoke testy to po prostu uruchamianie manifestów, specjalnie przygotowanych w katalogu <code>tests</code> w trybie bezoperacyjnym <code>--noop</code></p>
-          <pre><code>puppet apply tests/apache.pp --noop</code></pre>
-        </section>
-
-        <section data-background-color="#A61C00">
-          <h1>Zadanie 11</h1>
-          <ul>
-            <li>Wykorzystując kod z zadania 9 przetestować działanie trybu bezoperacyjnego</li>
-            <li>Przywrócić maszynę do stanu początkowego - sahara lub vagrant destroy</li>
-            <li>Uruchomić kod z flagą <code>--noop</code></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <section data-background-color="#1C4587">
-          <h1>Struktura kodu Puppet</h1>
-        </section>
-
-        <section>
-          <h2>Modułowość</h2>
-          <p>
-            Kod puppet umieszczamy w:
-          </p>
-          <ul>
-            <li>modułach</li>
-            <li>klasach</li>
-            <li>definicjach</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Struktura modułu</h2>
-          <pre><code>mymodule          # This outermost directory’s name matches the
-│                 # name of the module.
-├── manifests     # Contains all of the manifests in the module.
-│   └── init.pp   # Contains a class definition. This class’s
-│                 # name must match the module’s name.
-├── metadata.json # Contains META information about module
-├── spec          # Contains spec tests for any plugins in the
-│                 # lib directory.
-├── templates     # Contains templates, which the module’s
-│                 # manifests can use.
-├── files         # Contains files to be sourced
-├── tests         # Contains examples showing how to declare
-│   │             # the module's classes and defined types.
-│   └── init.pp
-└── lib           # Contains plugins, like custom facts and
-    │             # custom resource types.
-    └── puppet
-        ├── provider
-        └── type</code></pre>
-        </section>
-        <section>
-          <h2>Moduły 101</h2>
-          <ul>
-            <li>Moduły znajdują się na PM</li>
-            <li>Moduły zawierają kod Puppet</li>
-            <li>Moduły posiadają określony układ</li>
-            <li>Moduły mogą być prosto instalowane</li>
-          </ul>
-          <p>
-            Wiecej: <a href="http://slides.com/cardil/reusable-puppet-module-development-and-testing">http://slides.com/cardil/...</a>
-          </p>
-        </section>
-        <section>
-          <h2>Klasy</h2>
-          <ul>
-            <li>Klasy to nazwane bloki kodu Puppet</li>
-            <li>Są definiowane w modułach do późniejszego użycia</li>
-            <li>Nie są automatycznie wywoływane, muszą być dołączone do katalogu</li>
-            <li>Generalnie opisują średnie i duże fragmenty funkcjonalności</li>
-            <li>Nazwa może mylić z innymi językami programowania</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Klasy przykład</h2>
-          <pre><code class="puppet">class apache ($version = 'latest') {
-  package {'httpd':
-    ensure => $version, # Using the class parameter from above
-    before => File['/etc/httpd.conf'],
-  }
-  file {'/etc/httpd.conf':
-    ensure  => file,
-    owner   => 'httpd',
-    content => template('apache/httpd.conf.erb'), # Template from a module
-  }
-  service {'httpd':
-    ensure    => running,
-    enable    => true,
-    subscribe => File['/etc/httpd.conf'],
-  }
-}</code></pre>
-        </section>
-        <section>
-          <h2>Użycie klasy</h2>
-          <pre><code class="puppet"># only once in catalog
-# class is a resource
-class { 'apache':
-  version => 'latest',
-}
-# or simply
-include apache
-include apache</code></pre>
-        </section>
-        <section>
-          <h2>Definicje</h2>
-          <ul>
-            <li>To bloki kodu puppet które mogą być wywołane wielokrotnie z różnymi parametrami</li>
-            <li>Mogą być użyte jako proste makra dla powtarzających się operacji</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Definicje - przykład</h2>
-          <pre><code class="puppet"># /etc/puppet/modules/apache/manifests/vhost.pp
-define apache::vhost ($port, $docroot, $servername = $title, $vhost_name = '*') {
-  include apache # contains Package['httpd'] and Service['httpd']
-  include apache::params # contains common config settings
-  $vhost_dir = $apache::params::vhost_dir
-  file { "${vhost_dir}/${servername}.conf":
-    content => template('apache/vhost-default.conf.erb'),
-      # This template can access all of the parameters and variables from above.
-    owner   => 'www',
-    group   => 'www',
-    mode    => '644',
-    require => Package['httpd'],
-    notify  => Service['httpd'],
-  }
-}</code></pre>
-        </section>
-        <section data-background-color="#A61C00">
-          <h1>Zadanie 12</h1>
-          <ul>
-            <li>Wykorzystując kod z zadania 11 utworzyć moduł puppet i przenieść kod do klas i definicji</li>
-            <li>Przygotować smoke testy w <code>tests</code></li>
-            <li>Uruchomić testy z flagą <code>--noop</code></li>
-            <li>Uruchomić kod klas</li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Kompilacja, katalog i raportowanie</h1>
-        </section>
-        <section>
-          <h2>Kompilacja</h2>
-          <ul>
-            <li>Puppet kompiluje kod wczytując klasy przypisane do węzła</li>
-            <li class="fragment">Sprawdzana jest kolejność i unikalność zasobów</li>
-            <li class="fragment">Powstaje katalog, plik json z konkretnymi zadaniami do wykonania w określonej kolejności</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Katalog</h2>
-          <ul>
-            <li>Katalog to wynik kompilacji</li>
-            <li class="fragment">Zawiera tylko te zasoby które mają się wywołać na danym węźle</li>
-            <li class="fragment">Zawiera konkretne wartości w tym treści plików i potrzebne hasła</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Raport</h2>
-          <ul>
-            <li>W trakcie uruchomienia generowany jest raport</li>
-            <li class="fragment">Raport może zostać zapisany lub wysłany do procesowa raportów</li>
-            <li class="fragment">Procesory raportów to Enterprise console i Herald</li>
-          </ul>
-        </section>
-        <section>
-          <h2>PE Console</h2>
-          <p><img src="img/pe-3-console.png" /></p>
-        </section>
-        <section>
-          <h2>Herald</h2>
-          <p><img style="height: 550px" src="//raw.githubusercontent.com/wavesoftware/gem-puppet-herald/gh-pages/images/reports.png" /></p>
-        </section>
-        <section>
-          <h1>Raporty</h1>
-          <h2 class="blue">demo</h2>
-        </section>
-      </section>
-
-      <section data-background-color="#A61C00">
-        <h1>Zadanie 13</h1>
+      <section data-background-color="#5A983F">
+        <h1>Podsumowanie</h1>
+        <h2>warsztatu</h2>
         <ul>
-          <li>Wykorzystując poznane umiejętności napisz moduł puppeta instalujący i konfigurujący blog WordPress</li>
-          <li>Instalacja interpretera PHP, serwera bazy danych, serwera www, konfiguracja użytkowników systemowych</li>
-          <li>Nie zapomnij o testach dymnych</li>
-          <li>Postaraj się zachować idempotencję</li>
-          <li>Uruchom kod i przetestuj</li>
+          <li>Co poznaliśmy? Powtorka.</li>
+          <li>Co dalej?
+            <ul>
+              <li>modułowość</li>
+              <li>serwer &lt;=&gt; agent</li>
+              <li>testowanie</li>
+            </ul>
+          </li>
         </ul>
       </section>
 
